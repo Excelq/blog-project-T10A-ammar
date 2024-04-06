@@ -1,0 +1,327 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Ammar</title>
+    <link
+      rel="shortcut icon"
+      href="https://wojakparadise.net/wojak/39/img"
+      type="image/x-icon"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/f90068558c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img class="header-icon" src="img/assets/header-icon.png" alt="" />
+        <h3 class="title"><a href="index.html">Infinity</a></h3>
+        <nav>
+          <a href="project.html">Project</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Us</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="jumbotron">
+        <div class="jumbotron">
+          <h1 class="jumbotron-title" onclick="newText()">Tips Coding !!</h1>
+          <div class="header-flex">
+            <div>
+              <h2 class="jumbotron-text">
+                Baru di programming? <br />
+                Belajar lewat pengembangan
+                <span style="color: rgb(244, 162, 97)"> Game dan Web</span>
+                Sederhana
+              </h2>
+              <div class="mini-text-flex">
+                <p class="mini-text">Belajar Programming Awal</p>
+                <button id="icon-up" class="icon-up" onclick="changeText()">
+                  <i class="far fa-hand-point-up"></i>
+                </button>
+                <button id="icon-down" class="icon-down">
+                  <i class="far fa-hand-point-down"></i>
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                class="jumbotron-img"
+                src="img/Hand coding-pana.png"
+                alt="jumbotron"
+                width="auto"
+                height="300"
+                onmouseover="changeImage(this)"
+                onmouseout="changeImageBack(this)"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- wave -->
+      <svg
+        class="svg1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#f4a361"
+          fill-opacity="1"
+          d="M0,320L60,288C120,256,240,192,360,192C480,192,600,256,720,282.7C840,309,960,299,1080,282.7C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+      <!-- wave 2 -->
+      <svg
+        class="svg2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,320L60,288C120,256,240,192,360,192C480,192,600,256,720,282.7C840,309,960,299,1080,282.7C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+
+      <section id="slider" class="section-slider">
+        <div class="image-slider">
+          <div class="slide active">
+            <img src="img/assets/game-development.jpg" alt="" />
+            <div class="slide-text">
+              <h2>Game Development</h2>
+              <p>
+                Instead of playing games all day long, why not create your own?
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/assets/web-design.jpg" alt="" />
+            <div class="slide-text">
+              <h2>Web Design</h2>
+              <p>Design your websites, make it pretty</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/assets/kids-programming.jpg" alt="" />
+            <div class="slide-text">
+              <h2>Kids Programming</h2>
+              <p>Teach your kids how to code</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/assets/apps.jpg" alt="" />
+            <div class="slide-text">
+              <h2>App Development</h2>
+              <p>Make apps for your company</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="img/assets/web-development.jpg" alt="" />
+            <div class="slide-text">
+              <h2>Web Development</h2>
+              <p>Create websites to advertise your products</p>
+            </div>
+          </div>
+
+          <div class="navigation">
+            <div class="slider-btn active"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="main-content">
+        <aside>
+          <div>
+            <h3 class="aside-title">Here's Ammar</h3>
+            <img
+              class="profile-picture"
+              src="https://mario.wiki.gallery/images/thumb/4/47/Mario_Party_Star_Rush_King_Boo.png/500px-Mario_Party_Star_Rush_King_Boo.png"
+              alt="profile"
+              width="150px"
+              height="150px"
+            />
+
+            <div class="toggle">
+              <button class="btn" id="green" onclick="dayMode()">
+                <i class="fa fa-thumbs-up fa-lg"></i>
+              </button>
+              <button class="btn" id="red" onclick="nightMode()">
+                <i class="fa fa-thumbs-down fa-lg"></i>
+              </button>
+            </div>
+          </div>
+        </aside>
+
+        <div class="content">
+          <div class="search-tags-container">
+            <div class="input-tag">
+              <h3 class="aside-title">Search Here</h3>
+              <input id="myInput" type="text" placeholder="Search..." />
+              <span class="addBtn" onclick="newElement()"> Search</span>
+            </div>
+            <ul id="myUL" class="search-tags-list">
+              <li class="search-tags-item">HTML</li>
+              <li class="search-tags-item">Code</li>
+            </ul>
+          </div>
+          <article id="maps">
+            <div class="maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d168098.96613339602!2d82.44135223680453!3d49.96642371399394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42eb45d0f634c9a9%3A0x7bfa8dab8b6404e5!2s%C3%96skemen%20070000%2C%20Kazakhstan!5e1!3m2!1sid!2sid!4v1700909850902!5m2!1sid!2sid"
+                width="300"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </article>
+          <article id="maps">
+            <div class="maps">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/0vOWXVAYy7uN7UQlqaVFwL?utm_source=generator&theme=0"
+                width="300"
+                height="253"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </article>
+          <article id="video">
+            <div class="item-video" data-aos="zoom-in" data-aos-duration="3000">
+              <h3 class="article-title">What is Coding?</h3>
+              <iframe
+                width="500"
+                height="300"
+                src="https://www.youtube.com/embed/T7aSI-E1fCE"
+                title="Why Most People FAIL to Learn Programming"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="display: flex"
+              ></iframe>
+            </div>
+          </article>
+
+          <div class="item-video" data-aos="zoom-in" data-aos-duration="3000">
+            <h3 class="article-title">Coding is Not Difficult!</h3>
+            <iframe
+              width="500"
+              height="300"
+              src="https://www.youtube.com/embed/hUdB232fIXM"
+              title="The 5 stages of learning to code"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="display: flex"
+            ></iframe>
+          </div>
+
+          <article id="my-project">
+            <h3 class="article-title">My Project</h3>
+            <div
+              class="project-container"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+            >
+              <div class="project">
+                <img
+                  src="img/assets/blog.png"
+                  alt=""
+                  width="300px"
+                  height="210px"
+                />
+                <h4 class="project-title">Blog</h4>
+                <p class="project-description">
+                  Blog pribadi yang berisi kontak, proyek proyek, dan informasi
+                  informasi lain seputar pribadi
+                </p>
+              </div>
+              <div class="project">
+                <img
+                  src="img/assets/sharkattack.png"
+                  alt=""
+                  width="300px"
+                  height="210px"
+                />
+                <h4 class="project-title">Shark Attack</h4>
+                <p class="project-description">
+                  Game simple yang berlatar di sebuah lautan, mendapat poin
+                  sebanyak mungkin dengan memakan ikan ikan kecil
+                </p>
+              </div>
+            </div>
+            <div
+              class="project-container"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+            >
+              <div class="project">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/ITunes_logo.svg/1200px-ITunes_logo.svg.png"
+                  alt=""
+                  width="300px"
+                  height="auto"
+                />
+                <h4 class="project-title">Itunes</h4>
+                <p class="project-description">Projek website Replika Itunes</p>
+              </div>
+              <div class="project">
+                <img
+                  src="https://diskominfo.kedirikab.go.id/uploads/teknologi/tux-158547_1280.png"
+                  alt=""
+                  width="300px"
+                  height="auto"
+                />
+                <h4 class="project-title">Linux HUB</h4>
+                <p class="project-description">
+                  Download banyak versi dan model linux dalam 1 website
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="main-footer">
+        <h3 class="info-top">Ammar</h3>
+        <div class="social-media">
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fas fa-envelope"></i>
+        </div>
+        <p class="info-center">
+          Copyright &copy; 1998. Unknown. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
